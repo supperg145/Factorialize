@@ -11,7 +11,8 @@ const factorialize = (n) => {
     let current = 1
     let calculationsArray = []
     if(n === 0) {
-        console.log(1)
+        console.log(`0!= 1`)
+        return
     }
     for(let i = 1; i <= n; i++) {
         current *= i
@@ -21,4 +22,5 @@ const factorialize = (n) => {
     console.log(`${n}!= ${calculationString} = ${current}`)
 }
 
+factorialize(0)
 factorialize(5)
